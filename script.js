@@ -1,6 +1,7 @@
 let temp = Math.floor(Math.random() * 7) + 1;
 const audio = new Audio(`../songs/${temp}.mp3`);
 let index = temp;
+audio.currentTime=0;
 
 PlayBtn = document.getElementById("play-btn");
 ForwardButton = document.getElementById("forward-btn");
