@@ -2,7 +2,6 @@
 
 body {
   background-color:black;
-  background-image: url("4.gif");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 0px;
@@ -19,9 +18,16 @@ nav {
   background-color: black;
   height: 65px;
 }
+
+#nav{
+    position:sticky;
+    top: 0px;
+
+}
 nav ul {
   list-style: none;
   display: flex;
+  flex-direction: row;
   height: 100%;
   align-items: center;
 }
@@ -64,6 +70,7 @@ nav ul li {
   background-color: black;
   bottom: 0;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -82,8 +89,15 @@ nav ul li {
     padding-top:20px;
     padding-left: 30px;
     font-family: Cursive;
+    font-style: Italic;
     font-size:30px;
     font-weight: bolder;
+    position:flex;
+    flex-direction: column;
+    height: 100%;
+}
+.songList h1{
+    height:20%;
 }
 
 #timeelapsed {
@@ -103,6 +117,7 @@ nav ul li {
   justify-content: space-between;
   height:60px;
   margin-top: 8px;
+  margin-right: 10px;;
   font-size: 15px;
   font-weight: bold;
   color: black;
@@ -123,7 +138,9 @@ nav ul li {
     cursor: pointer;
 }
 .songItemContainer{
-    margin-top: 80px;
+    border-radius:10px;
+    height: 70%;
+    overflow-y: scroll;
 }
 .songInfo img{
     position: absolute;
@@ -134,8 +151,9 @@ nav ul li {
     color: white;
     position: absolute;
     left: 17vw;
-    font-size: 1vw;
+    font-size: max(7px,1.5vw);
     font-family: Dosis,arial,sans-serif;
+    font-weight: bolder;
     margin-top: 8px;
 }
 #gif{
@@ -151,3 +169,34 @@ nav ul li {
     height: 50%;
     border-radius:300px;
 }
+
+#volume-control{
+    margin-top:2vh;
+    position: absolute;
+    right: 10vw;
+}
+
+
+i:hover {
+  opacity: 0.5;
+  }
+/* //Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
