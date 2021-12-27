@@ -1,4 +1,4 @@
 # SpotifyClone
 
 DEMO URL:
-https://gifted-stonebraker-2e9a08.netlify.app
+https://quirky-feynman-502c5e.netlify.app/
