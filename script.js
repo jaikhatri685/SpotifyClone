@@ -1,7 +1,6 @@
 let temp = Math.floor(Math.random() * 7) + 1;
 const audio = new Audio(`../songs/${temp}.mp3`);
 let index = temp;
-audio.currentTime=0;
 
 PlayBtn = document.getElementById("play-btn");
 ForwardButton = document.getElementById("forward-btn");
@@ -118,7 +117,7 @@ setInterval(function () {
   myProgressBar.value = (audio.currentTime / audio.duration) * 100;
   document.getElementById("timeelapsed").innerText =
     Math.floor(Math.floor(audio.currentTime / 60)) + ":" + formattedNumber;
-}, 500);
+}, 1000);
 
 function makeAllPlay() {
   Array.from(document.getElementsByClassName("songItemPlay")).forEach(
