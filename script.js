@@ -117,7 +117,7 @@ setInterval(function () {
   myProgressBar.value = (audio.currentTime / audio.duration) * 100;
   document.getElementById("timeelapsed").innerText =
     Math.floor(Math.floor(audio.currentTime / 60)) + ":" + formattedNumber;
-}, 1000);
+}, 600);
 
 function makeAllPlay() {
   Array.from(document.getElementsByClassName("songItemPlay")).forEach(
