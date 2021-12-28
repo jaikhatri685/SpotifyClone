@@ -66,7 +66,8 @@ nav ul li {
 
 .bottom {
   position: sticky;
-  height: 100px;
+  height: 15vh;
+  width:100%;
   background-color: black;
   bottom: 0;
   display: flex;
@@ -74,8 +75,17 @@ nav ul li {
   justify-content: center;
   align-items: center;
 }
+
+.bottom div:first-child{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.bottom div span{
+  width: 3%;
+}
 #progress-bar {
-  width: 75vw;
+  width: 97%;
   cursor: pointer;
 }
 .bottom i {
@@ -85,18 +95,20 @@ nav ul li {
   padding-top: 15px;
 }
 .songList {
+  height: 100%;
     padding-top:20px;
     padding-left: 30px;
     font-family: Cursive;
     font-style: Italic;
-    font-size:30px;
     font-weight: bolder;
     position:flex;
     flex-direction: column;
     height: 100%;
 }
 .songList h1{
-    height:5vw;
+    height:15%;
+    width: 100%;
+    font-size:250%
 }
 
 #timeelapsed {
@@ -106,7 +118,7 @@ nav ul li {
     color: white;
 }
 .container >* {
-  width: 50vw;
+  width: 50%;
   align-items: center;
 
 }
@@ -114,18 +126,18 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height:60px;
-  margin-top: 2vh;
-  margin-right: 10px;
-  font-size: 15px;
+  height:min(50%,60px);
+  margin-top: 2%;
+  margin-right: 4%;
+  font-size: min(100%);
   font-weight: bold;
   color: black;
   background-color: white;
-  border-radius: 45px;
+  border-radius: 100px;
 }
 
 .songItem img {
-  width: 4vw;
+  width: 12%;
   padding: 10px;
   border-radius: 45px;
   
@@ -136,11 +148,13 @@ nav ul li {
     padding-right: 10px;
     cursor: pointer;
 }
+
 .songItemContainer{
     border-radius:10px;
     height: 70%;
     overflow-y: scroll;
 }
+
 .songInfo{
   display: flex;
   flex-direction: row;
@@ -152,34 +166,37 @@ nav ul li {
   
 }
 #TitlebelowBar{
-  position: absolute;
-  left: 15vw;
-  width: 20vw;
+  font-weight: bolder;
+  margin-top: min(.5,10px);
+  left: 15%;
+  width: 20%;
 }
 #btn3{
   position: absolute;
   align-items: center;
-  margin-top: 10px;
-  padding-top: 10px
+  margin-top: min(1.5%,15px);
+  padding-top: 10px;
 }
 #volume-control{
+  width:7%;
   position: absolute;
-  right:12vw;
-  margin-top: 5px;;
+  right:11%;
+  margin-top: 0.5%;
 }
 
 
 #gif{
     opacity: 0;
 }
-.songBanner{
+.songBanner{    
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .songBanner img{
-    height: 50%;
+   
+    width: max(50%,100px);
     border-radius:300px;
 }
 
